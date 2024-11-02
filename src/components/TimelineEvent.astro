@@ -1,0 +1,83 @@
+---
+interface Props {
+  title: string;
+  date: string;
+  summary: string;
+  href: string;
+}
+
+const { title, date, summary, href } = Astro.props;
+---
+
+<div class="timeline-event">
+  <div class="event-date">{date}</div>
+  <div class="event-content">
+    <h3><a href={href}>{title}</a></h3>
+    <p>{summary}</p>
+  </div>
+</div>
+
+<style>
+  .timeline-event {
+    position: relative;
+    padding: 2rem;
+    margin: 2rem 0;
+    background: #23262d;
+    border-radius: 8px;
+    border-left: 4px solid rgb(var(--accent));
+    transition: all 0.3s ease;
+  }
+
+  .timeline-event:hover {
+    transform: translateX(10px);
+    box-shadow: 0 5px 15px rgba(var(--accent), 0.2);
+  }
+
+  .event-date {
+    position: absolute;
+    top: -0.5rem;
+    left: 1rem;
+    background: rgb(var(--accent));
+    padding: 0.25rem 1rem;
+    border-radius: 4px;
+    color: white;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+
+  .timeline-event:hover .event-date {
+    transform: scale(1.05);
+    background: rgb(var(--accent-light));
+  }
+
+  .event-content {
+    margin-top: 1rem;
+  }
+
+  .event-content h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .event-content a {
+    color: rgb(var(--accent-light));
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .event-content a:hover {
+    color: white;
+    text-shadow: 0 0 8px rgba(var(--accent-light), 0.5);
+  }
+
+  .event-content p {
+    margin-top: 0.5rem;
+    color: #ccc;
+    transition: all 0.3s ease;
+  }
+
+  .timeline-event:hover .event-content p {
+    color: white;
+  }
+</style>

@@ -1,0 +1,62 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Event Three - Technical Analysis">
+  <main>
+    <h1>Event Three: <span class="text-gradient">Technical Analysis</span></h1>
+    <div class="content">
+      <h2>Technical Details</h2>
+      <p>In-depth technical analysis of the event.</p>
+
+      <h2>Innovation Impact</h2>
+      <p>How this event influenced technological progress.</p>
+
+      <h2>Future Implications</h2>
+      <p>Potential future developments and opportunities.</p>
+
+      <a href="/" class="back-link">← Back to Timeline</a>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .content {
+    background: #23262d;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+  }
+  .back-link {
+    display: inline-block;
+    margin-top: 2rem;
+    color: rgb(var(--accent-light));
+    text-decoration: none;
+  }
+  .back-link:hover {
+    text-decoration: underline;
+  }
+</style>
