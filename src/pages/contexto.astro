@@ -1,0 +1,103 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Contexto Familiar">
+  <main>
+    <h1>Contexto <span class="text-gradient">Familiar</span></h1>
+    <div class="content">
+      <h2>Padre</h2>
+      <p>
+        Fredy cuenta que su padre nació en Ubala, Cundinamarca. Tuvo solamente
+        estudios en escuela primaria, fue enfermero del ejercito, profesor en
+        una escuela rural y promotor de saneamiento. Por ultimo, el era un
+        hombre muy conservador.
+      </p>
+
+      <h2>Madre</h2>
+      <p>
+        Por el lado de su madre, Fredy cuenta que que ella nació en Ubate,
+        Cundinamarca. Estudió hasta segundo de bachillerato. Su padre (abuelo de
+        Fredy), la empujaba para venir a Bogotá a estudiar ya que ellos tenian
+        unas haciendas por las que sufrian de extorsiones, presiones y
+        agresiones por parte de los grupos armados cercanos a la zona. Ella, por
+        el contrario al padre de Fredy, era de pensamiento liberal.
+      </p>
+
+      <h2>La vida de Fredy joven</h2>
+      <p>
+        Los padres de Fredy se casan en 1959 y luego nace Fredy, como sus padres
+        tenian visiones politicas diferentesm, la politica era un tema del que
+        no se hablaba mucho en la casa para evitar conflictos, pero de esta
+        misma forma él creció con las dos perspectivas. Su padre proponia que
+        estudiara en un colegio publico, debido a que el costo era mucho menor e
+        igualmente saldria con buena educacion, pero por otro lado su madre,
+        trabajó muy duro para poder darle educación privada.
+      </p>
+      <p>
+        Fredy estudió en el Mayor de San Bartolomé, un colegio subsidiado por
+        los jesuitas, donde él obtuvo el mejor puntaje del colegio y le dieron
+        una beca para estudiar en la Universidad Javeriana. Fredy decidio que no
+        iba a estudiar en una universidad religiosa, y aunque su madre no estuvo
+        de acuerdo, él se fue a estudiar medicina en la Universidad Nacional
+        entre 1979 y 1984.
+      </p>
+      <p>
+        Durante su tiempo en la universidad, estuvo presente en la ciudad el M19
+        donde en uno de los conflictos en la ciudad, el este grupo armado mató
+        un lider sindical. En esta epoca tambien era muy comun el paro nacional,
+        por lo que varias veces tocaba militarizar la ciudad.
+      </p>
+      <p>
+        Como ulimo evento de esta etapa, Fredy realizó su año de practicas en
+        Villavicencio, donde conoció otra cultura, con otro tipo de
+        infraestructura y diferentes enfermedades a tratar. Fue una experiencia
+        muy diferente a la vida durante su carrera ya que debia vivir dentro del
+        hospital.
+      </p>
+
+      <a href="/" class="back-link">← Back to Timeline</a>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .content {
+    background: #23262d;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+  }
+  .back-link {
+    display: inline-block;
+    margin-top: 2rem;
+    color: rgb(var(--accent-light));
+    text-decoration: none;
+  }
+  .back-link:hover {
+    text-decoration: underline;
+  }
+</style>
